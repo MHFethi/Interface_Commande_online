@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(70, 201, 120);
+    font-family: 'Arial';
+}
+
+a {
+    text-decoration: none;
+}
+
+.welcome {
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-height: 100%;
+}
+
+.contentConnexion {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 25px rgb(21, 112, 44);
+    text-align: center;
+    width: 50%;
+}
+
+.contentSub {
+    display: block;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 25px rgb(21, 112, 44);
+    text-align: center;
+    width: 75%;
+    height: 600px;
+}
+
+.contentSub h1 {
+    text-align: center;
+}
+
+.commande{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 25px rgb(45, 109, 61);
+    text-align: center;
+    width: 50%;
+    height: 600px;
+
+}
+
+#connexion, #subscribe {
+    background-color: rgb(32, 177, 68);
+    width: 50%;
+    height: 50px;
+    border-radius: 2px;
+    border: 0px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+#go {
+    background-color: rgb(32, 177, 68);
+    width: 5%;
+    height: 5%;
+    border-radius: 2px;
+    border: 0px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+
+#mdp,
+#pseudo,#mail {
+    background-color: rgb(235, 235, 235);
+    margin-top: 34px;
+    width: 50%;
+    height: 50px;
+    border-radius: 2px;
+    border: 0px;
+}
+
+#prix_mini,#prix_max, #list_plat, #list_ing {
+    background-color: rgb(235, 235, 235);
+    margin-top: 10px;
+    width: 25%;
+    height: 25px;
+    border-radius: 2px;
+    border: 0px;
+}
+
