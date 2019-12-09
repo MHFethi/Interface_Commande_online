@@ -1,0 +1,558 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none !important;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+    text-decoration: none !important;
+
+}
+
+body {
+    line-height: 1;
+    text-decoration: none !important;
+
+}
+
+ol,
+ul {
+    list-style: none;
+    text-decoration: none !important;
+
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none !important;
+
+}
+
+
+body {
+    text-decoration: none;
+    font-family: 'Arial';
+}
+
+.backgroud-body {
+    background-image: url('../img/bg-EMF.jpg');
+    background-size: cover;
+}
+
+/*HEADER */
+.logo {
+    font-weight: bold;
+    color: #4d4d4d;
+    font-size: 2em;
+}
+
+.word-color {
+    color: #fbb03b;
+}
+
+/* Navigateur */
+nav ul li a,
+nav li:hover li a {
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+nav li:hover li {
+    max-height: 10em;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 1px;
+    background: #ffffff;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+/* SEARCH WINDOW */
+.window {
+    padding-left: 5%;
+}
+
+
+.welcome {
+    padding-bottom: 2em;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.annonce {
+    padding-bottom: 1em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.search-win {
+    background: #faf6ed;
+    box-shadow: 4px 4px 7px rgb(95, 94, 94);
+    width: 650px;
+    height: 450px;
+}
+
+
+/* Style for word search search field */
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #faf6ed;
+}
+
+
+form.search button {
+    float: left;
+    width: 10%;
+    padding: 12px;
+    background: #fbb03b;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #fbb03b;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+    position: relative;
+    left: 12px;
+    border-radius: 5px;
+
+}
+
+form.search button:hover {
+    background: #d37a07;
+    border: 1px solid #d37a07;
+    border-radius: 5px;
+}
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+form.list select {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #faf6ed;
+}
+
+/* Style for list search field */
+form.list button {
+    float: left;
+    width: 10%;
+    padding: 12px;
+    background: #fbb03b;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #fbb03b;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+    position: relative;
+    left: 12px;
+    border-radius: 5px;
+}
+
+form.list button:hover {
+    background: #d37a07;
+    border: 1px solid #d37a07;
+    border-radius: 5px;
+}
+
+form.list::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Style for Price search field */
+form.price input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 40%;
+    background: #faf6ed;
+}
+
+form.price button {
+    float: left;
+    width: 10%;
+    padding: 12px;
+    background: #fbb03b;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #fbb03b;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+    position: relative;
+    left: 12px;
+    border-radius: 5px;
+
+}
+
+form.price button:hover {
+    background: #d37a07;
+    border: 1px solid #d37a07;
+    border-radius: 5px;
+}
+
+form.price::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+/*RESEARCH WINDOW*/
+
+.product-name{
+    font-size:2em;
+}
+
+.product-price{
+font-size:1.5em;
+}
+
+.product-describe{
+    color: #6d6e71;
+    position:absolute;
+    top:30%;
+    padding-right:30%;
+    line-height: 1.4;
+}
+
+.specialite{
+    color: #808285;
+    font-size:0.75em;
+
+}
+
+.result-win {
+    background: #faf6ed;
+    box-shadow: 4px 4px 7px rgb(95, 94, 94);
+    width: 650px;
+    height: 300px;
+    position:relative;
+
+}
+
+
+
+.btn-ajouter {
+    width: 9.5em;
+    padding: 6px;
+    position:absolute;
+    top:14em;
+    right:0.5em;
+    background: #fbb03b;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #fbb03b;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+.product-detail{
+
+        position: absolute;
+        left:72%;
+        
+}
+
+.btn-ajouter:hover {
+    background: #d37a07;
+    border: 1px solid #d37a07;
+    border-radius: 5px;
+}
+
+
+.btn-commande {
+    width: 20em;
+    padding: 12px;
+    background: #fbb03b;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #fbb03b;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+.btn-commande:hover {
+    background: #d37a07;
+    border: 1px solid #d37a07;
+    border-radius: 5px;
+}
+
+
+/*qunatity*/
+
+#number{
+    width:10em;
+    height:2em;
+    position:absolute;
+    right:4%;
+    text-align: center;
+}
+
+
+
+/* Contact slide window */
+.commande {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #faf6ed;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*FOOTER*/
+footer {
+
+    background-color: #2e3333;
+    width: 105%;
+    height: 35vh;
+    margin-right: 12px;
+
+}
+
+footer h2 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+
+.f-wind1 {
+    background-color: #434848;
+    width: 16%;
+    height: 27vh;
+    margin-left: 2%;
+    color: white;
+    padding: 1%;
+}
+
+.f-wind2 {
+    background-color: #434848;
+    width: 16%;
+    height: 27vh;
+    margin-left: 2%;
+    color: white;
+    padding: 1%;
+}
+
+
+.f-wind3 {
+    background-color: #434848;
+    width: 16%;
+    height: 27vh;
+    margin-left: 2%;
+    color: white;
+    padding: 1%;
+}
+
+.f-wind4 {
+    background-color: #434848;
+    width: 16%;
+    height: 27vh;
+    margin-left: 2%;
+    color: white;
+    padding: 1%;
+}
+
+footer ul li {
+    color: rgb(255, 254, 254)(167, 167, 167);
+    padding: 2%;
+
+}
+
+

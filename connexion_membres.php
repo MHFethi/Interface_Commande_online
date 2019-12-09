@@ -50,7 +50,7 @@
         
         <form method="POST" action="">
             <p>
-                <input type="text" name="pseudoConnect" placeholder="   Votre pseudo" id="pseudo"/>  
+                <input type="text" name="pseudoConnect" placeholder="Votre pseudo" id="pseudo"/>  
                 <br/>
                 <input type="password" name="passwordConnect" placeholder="   Votre mot de passe" id="mdp"/>  
                 <br/> <br/>
