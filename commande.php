@@ -40,9 +40,8 @@
                 <h1 class="col-auto m-0 p-0 logo">EAT <span class="word-color">MyPhp</span> FOOD</a></h1>
                 <nav class="col-auto ml-auto">
                     <ul class="row  justify-content-between my-0">
-                        <li class="col-auto cool-link"><a href="#">Se deconnecter</a></li>
-                        <li class="col-auto cool-link"><a href="#">Inscription</a></li>
-                        <li class="col-auto cool-link"><a href="#">Commander</a></li>
+                        <li class="col-auto cool-link"><a href="#">Ma commande</a></li>
+                        <li class="col-auto cool-link"><a href="#">Deconnexion</a></li>
                     </ul>
                 </nav>
             </header>

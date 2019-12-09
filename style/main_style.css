@@ -157,6 +157,12 @@ body {
     background-size: cover;
 }
 
+.backgroud-body-connexion {
+    background-image: url('../img/bg-connexion.jpg');
+    background-size: cover;
+}
+
+
 /*HEADER */
 .logo {
     font-weight: bold;
@@ -166,6 +172,10 @@ body {
 
 .word-color {
     color: #fbb03b;
+}
+
+.word-color2 {
+    color: #434848;
 }
 
 /* Navigateur */
@@ -200,6 +210,50 @@ nav li:hover li {
     transition: width .3s;
 }
 
+
+
+/*PAGE CONNEXION*/
+
+#connexion, #subscribe {
+    background-color:#fbb03b;
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    border: 0px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+
+#mdp,
+#pseudo,#mail {
+    background-color: rgb(235, 235, 235);
+    margin-top: 34px;
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    border: 0px;
+}
+
+
+
+
+.search-conn {
+    background: #faf6ed;
+    box-shadow: 4px 4px 7px rgb(95, 94, 94);
+    width: 450px;
+    height: 450px;}
+
+/*PAGE INSCRIPTION*/
+
+.search-sub {
+    background: #faf6ed;
+    box-shadow: 4px 4px 7px rgb(95, 94, 94);
+    width: 500px;
+    height: 550px;}
+
+/*PAGE COMMANDE EN LIGNE*/
 /* SEARCH WINDOW */
 .window {
     padding-left: 5%;
@@ -379,7 +433,6 @@ font-size:1.5em;
     position:relative;
 
 }
-
 
 
 .btn-ajouter {
