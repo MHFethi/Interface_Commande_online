@@ -33,7 +33,7 @@
                         }else{
                             $insertMbr= $bdd->prepare("INSERT INTO members(pseudo,mail,mot_de_passe) VALUES (?, ?, ?) ");
                             $insertMbr-> execute(array($pseudo,$mail,$password));
-                            $erreur = "Votre compte a bien été créér !<a href='connexion_membres.phpgit '>connecter</a>";
+                            $erreur = "Votre compte a bien été créér !<a href='connexion_membres.php?id=". $_SESSION['id_client'].">Se connecter</a>";
                             // header("location:Connexion_membres.php" ); 
                         }
                     }else{

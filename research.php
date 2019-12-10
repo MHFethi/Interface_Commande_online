@@ -49,10 +49,6 @@
 
 
 
-
-
-
-<section class="">
     <!-- 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////// CODE PHP POUR RECHERCHE PAR MOT CLES //////////////////////////////////////////////////////////////////////////// 
@@ -91,7 +87,7 @@
 <!-- 
 ////////////////////////////////////////////////////////////////////////// CODE HTML POUR AFFICHER RESULTAT RECHERCHE MOT CLES ///////////////////////////////////////////////////////////////////// 
 -->
-            <section class="result-win d-flex container mx-auto mb-5">  
+            <section class="result-win d-flex container mx-auto mt-5">  
 
 
                 <div class="d-flex align-items-start flex-column bd-highlight  p-2" style="height: 300px;">
@@ -118,7 +114,7 @@
 
 
                     <div class="">
-                        <form method="POST" action="ajout_panier.php"  >
+                        <form method="POST" action="ajout_panier.php<?php echo "?id=". $_SESSION['id_client'] ;?>"  >
 
                             <div class="mb-3 p-2 ml-5 bd-highlight">
                                 <input type="number" id="number" width="5%" step="1" name='quantity' />
@@ -221,7 +217,7 @@ NOTE URGENT:
 
 
     <div class="">
-        <form method="POST" action="ajout_panier.php"  >
+        <form method="POST" action="ajout_panier.php<?php echo "?id=". $_SESSION['id_client'] ;?>"  >
 
             <div class="mb-3 p-2 ml-5 bd-highlight">
                 <input type="number" id="number" width="5%" step="1" name='quantity' />
@@ -314,7 +310,7 @@ NOTE URGENT:
 
 
     <div class="">
-        <form method="POST" action="ajout_panier.php"  >
+        <form method="POST" action="ajout_panier.php<?php echo "?id=". $_SESSION['id_client'] ;?>"  >
 
             <div class="mb-3 p-2 ml-5 bd-highlight">
                 <input type="number" id="number" width="5%" step="1" name='quantity' />
@@ -409,7 +405,7 @@ NOTE URGENT:
 
 
     <div class="">
-        <form method="POST" action="ajout_panier.php"  >
+        <form method="POST" action="ajout_panier.php<?php echo "?id=". $_SESSION['id_client'] ;?>"  >
 
             <div class="mb-3 p-2 ml-5 bd-highlight">
                 <input type="number" id="number" width="5%" step="1" name='quantity' />

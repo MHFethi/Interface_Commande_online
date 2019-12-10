@@ -57,7 +57,7 @@
                 <h1 class="annonce">Commander vos plats préféres <br> en un clic</h1>
 
                 <section class="search-win p-4">
-                    <form class="search" method="post" action="research.php">
+                    <form class="search" method="post" action="research.php<?php echo "?id=". $_SESSION['id_client'] ;?> ">
                         <p>Rechercher parmi nos menu, vos plats préférés</p>
                         <input type="text" name="search" placeholder="Recherche un plat" name="search">
                         <button type="submit" name="result_search"><i class="fa fa-search"></i></button>
@@ -66,7 +66,7 @@
 
                     <br><br>
 
-                    <form class="list" method="post" action="research.php">
+                    <form class="list" method="post" action="research.php<?php echo "?id=". $_SESSION['id_client'] ;?> ">
                         <p>Liste des plats contenant les ingrédient suivant :
                             <select name="ingredient" id="list_ing">
                                 <option value="Boeuf">Boeuf</option>
@@ -96,7 +96,7 @@
 
                     <br><br>
 
-                    <form class="list" action="research.php" method='post'>
+                    <form class="list" action="research.php<?php echo "?id=". $_SESSION['id_client'] ;?>" method='post'>
                         <p>Spécialité: </p>
                         <select name="specialite" id="list_ing">
                             <option value="Italien">Italien</option>
@@ -110,7 +110,7 @@
                     <br><br>
 
 
-                    <form class="price" method="post" action="research.php">
+                    <form class="price" method="post" action="research.php<?php echo "?id=". $_SESSION['id_client'] ;?> ">
                         <p>Par fourchette de prix:</p>
                         <input type="text" name="prix_mini" placeholder="Prix mini" id="prix_mini" />
                         <input type="text" name="prix_max" placeholder="Prix max" id="prix_max" />
