@@ -39,7 +39,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style\main_style.css" />
+    <link rel="stylesheet" href="style\main_style.css?<?php echo filemtime('style\main_style.css');?>" />
 
 </head>
 
@@ -54,8 +54,7 @@
                 <h1 class="col-auto m-0 p-0 logo">EAT <span class="word-color">MyPhp</span> FOOD</a></h1>
                 <nav class="col-auto ml-auto">
                     <ul class="row  justify-content-between my-0">
-                        <li class="col-auto cool-link"><a href="#">Inscription</a></li>
-                        <li class="col-auto cool-link"><a href="#">Ma commande</a></li>
+                        <li class="col-auto cool-link"><a href="Inscription.php">Inscription</a></li>
                     </ul>
                 </nav>
             </header>
@@ -145,17 +144,6 @@
                 </ul>
             </div>
         </footer>
-        <!-- Script for contact window slide -->
-        <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "450px";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-
-        </script>
 </body>
 
 </html>

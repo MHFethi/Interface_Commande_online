@@ -28,7 +28,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style\main_style.css" />
+    <link rel="stylesheet" href="style\main_style.css?<?php echo filemtime('style\main_style.css');?>" />
 </head>
 
 
@@ -40,8 +40,7 @@
                 <nav class="col-auto ml-auto">
                     <ul class="row  justify-content-between my-0">
                         <li class="col-auto cool-link"><a href="#">Se deconnecter</a></li>
-                        <li class="col-auto cool-link"><a href="#">Inscription</a></li>
-                        <li class="col-auto cool-link"><a href="#">Commander</a></li>
+                        <li class="col-auto cool-link"><a href="commande.php<?php echo "?id=". $_SESSION['id_client'] ; ?>">Commander</a></li>
                     </ul>
                 </nav>
             </header>

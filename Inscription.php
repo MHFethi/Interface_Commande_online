@@ -54,7 +54,7 @@
 <html lang="fr">
 
 <head>
-    <title>Authentification</title>
+    <title>Inscription</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -65,7 +65,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style\main_style.css" />
+    <link rel="stylesheet" href="style\main_style.css?<?php echo filemtime('style\main_style.css');?>" />
 
 </head>
 

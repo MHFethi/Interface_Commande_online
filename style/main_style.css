@@ -277,6 +277,7 @@ nav li:hover li {
     box-shadow: 4px 4px 7px rgb(95, 94, 94);
     width: 650px;
     height: 450px;
+    position:relative;
 }
 
 
@@ -398,7 +399,19 @@ form.price::after {
     display: table;
 }
 
-
+#btn-cart {
+    background-color:#fbb03b;
+    width: 75%;
+    height: 50px;
+    border-radius: 2px;
+    border: 0px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    position:absolute;
+    bottom:5%;
+    left:9%;
+}
 
 
 /*RESEARCH WINDOW*/

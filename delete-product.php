@@ -61,24 +61,32 @@
                             }
 
                                 
-                        if (isset($_POST['ajouter'])) {
+                        if (isset($_POST['delete'])) {
                             $qty = intval ($_POST['quantity']);
                             $client = $_SESSION['id_client'];
-                            $plat_aj = $_POST['id_plat']; // cle plat
+                            $plat_aj = $_POST['id_plat']; 
 
-                            //ajouter cle_commande
 
-                            if (!empty($qty))  {
-
-                                $reqPlatAj = $bdd -> query("SELECT Prix FROM `plat` WHERE id_plat =". $plat_aj ."" );
-                                $data=  $reqPlatAj->fetch();
-                                $total = floatval($data ['Prix'] * $qty) ;
-
-    
-                                $insertQty= $bdd->prepare("INSERT INTO `ajout_panier` (`cle_panier`, `cle_plat_aj`, `quantite`, `total`) VALUES (?, ?, ?, ? ) ");
-                                $insertQty-> execute(array($client, $plat_aj, $qty, $total));
+                            if ($qty == 1){
+                                $delPlat = $bdd-> prepare(
+                                        "DELETE FROM ajout_panier 
+                                        WHERE cle_plat_aj =". $plat_aj ."" );
                                 
-                                echo '<h1 class="annonce"> Votre plat a bien été ajouté <br>au panier</h1>'
+                                $delPlat-> execute(array($plat_aj));
+                                echo '<h1 class="annonce"> Votre plat a bien été supprimer <br>du panier</h1>';
+                            
+                              
+                            }else{
+                                $upQty = $bdd -> prepare (
+                                        "UPDATE ajout_panier 
+                                        SET quantite =' ". $qty ."'WHERE cle_plat_aj =". $plat_aj . "");
+                                       
+                                        $upQty -> execute (array($qty, $plat_aj));
+                                        echo '<h1 class="annonce"> Votre quantité a bien été <br>modifié</h1>';      
+
+                         
+                       
+                        }
                                     
                     ?>
 
@@ -107,7 +115,7 @@
                     <?php
                             ;
                             }
-                        }
+                        
 
                     ?>
 

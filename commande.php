@@ -28,7 +28,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style\main_style.css" />
+    <link rel="stylesheet" href="style\main_style.css?<?php echo filemtime('style\main_style.css');?>" />
 
 </head>
 
@@ -40,7 +40,6 @@
                 <h1 class="col-auto m-0 p-0 logo">EAT <span class="word-color">MyPhp</span> FOOD</a></h1>
                 <nav class="col-auto ml-auto">
                     <ul class="row  justify-content-between my-0">
-                        <li class="col-auto cool-link"><a href="#">Ma commande</a></li>
                         <li class="col-auto cool-link"><a href="#">Deconnexion</a></li>
                     </ul>
                 </nav>
@@ -121,15 +120,13 @@
 
 
                     <div class="cursor d-flex justify-content-center">
-                        <a style="font-size:1em;cursor:pointer " onclick="openNav()">
-                            <input type="submit" name="Visualiser" value="Visualiser votre panier" class="btn-commande" /></a></div>
-                    <!-- SettingSlide Menu contact-->
-                    <div id="mySidenav" class="sidenav ">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <div class="container_contact">
-                            <div class=commande>Votre commande — </div>
-                        </div>
-                    </div>
+
+                                <form method="POST" action="panier.php<?php echo "?id=". $_SESSION['id_client'] ;?>">
+                                    <input type="submit" name="panier" value ="Visualiser votre panier" id="btn-cart"/>       
+                                </form> 
+
+                    </div> 
+                        
                  </section>   
             </div>
         </div>
